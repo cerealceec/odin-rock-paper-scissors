@@ -20,11 +20,13 @@ function playGame() {
                 msg = "It's a tie!";
                 break;
             case "human":
-                msg = `You win! ${capitalize(humanChoice)} beats ${computerChoice}.`
+                msg = `You win! ${capitalize(humanChoice)} ` +
+                `beats ${computerChoice}.`
                 humanScore++;
                 break;
             case "computer":
-                msg = `You lose! ${capitalize(computerChoice)} beats ${humanChoice}.`
+                msg = `You lose! ${capitalize(computerChoice)} ` +
+                `beats ${humanChoice}.`
                 computerScore++;
                 break;
         }
